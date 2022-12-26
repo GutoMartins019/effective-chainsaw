@@ -4,8 +4,9 @@
   "description": "TypeScript Study Project",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
-    "build": "tsc",
+    "start": "NODE_PATH=./build node build/server.js",
+    "dev": "nodemon --watch 'app/src/' --exec 'ts-node app/src/server.ts' -e ts",
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
